@@ -109,11 +109,14 @@ main{
   margin: 25px;
     background-color: antiquewhite;
     padding: 20px;
+    grid-area: m;
+
 }
 
 .footer{
     background-color:rgb(250, 244, 238);
     padding: 70px 0;
+    grid-area: f;
 }
 .container{
     max-width: 1170px;
@@ -163,4 +166,21 @@ transform: all 0.3s ease;
 .footer-col ul li a:hover{
     color: #f1b35c;
     padding-left: 10px;
+}
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+   "h h h h h h h h h h h h"
+   "h h h h h h h h h h h h"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "f f f f f f f f f f f f"
+   ;
 }
