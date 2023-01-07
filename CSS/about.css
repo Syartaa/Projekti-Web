@@ -145,4 +145,51 @@ font-family: 'Moon Dance', cursive;
 .active, .dot:hover{
 	border-color: #f8da79; 
 }
+.article-1{
+    margin-top: 45px;
+    padding: 20px;
+    background-color: rgba(246, 208, 158, 0.5);
+ text-align: center;
+  }
+  .paragraf-3{
+    font-size: 22px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #392e1e;
+  }
+  .img17{
+    width: 100%;
+    height: 700px;
+    margin-top: 40px;
+    opacity: 0.3;
+    position: relative;
+  }
+  .paragraf{
+    width: 400px;
+    font-size: 17px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #6d6142;
+  }
+  .paragraf-4{
+    position: absolute;
+    top: 180%;
+    left: 10%;
+  }
+  .heading-2{
+    position: absolute;
+    top: 165%;
+    left: 10%;
+    font-family: 'Moon Dance', cursive;
+    font-size: 30px;
+    color:#f1b35c
+  }
+  .paragraf-5{
+    position: absolute;
+    top: 217%;
+    left: 10%;
+  }
+  .paragraf-6{
+    position: absolute;
+    top: 245%;
+    left: 10%;
+  }
 
