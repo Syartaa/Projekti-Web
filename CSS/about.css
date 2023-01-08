@@ -49,6 +49,7 @@ justify-content: space-around;
     padding: 10px;
    position: sticky;
    top: 0;
+   grid-area: h;
 }
 .nav-items{
     display: flex;
@@ -171,12 +172,12 @@ font-family: 'Moon Dance', cursive;
   }
   .paragraf-4{
     position: absolute;
-    top: 180%;
+    top: 175%;
     left: 10%;
   }
   .heading-2{
     position: absolute;
-    top: 165%;
+    top: 160%;
     left: 10%;
     font-family: 'Moon Dance', cursive;
     font-size: 30px;
@@ -184,18 +185,19 @@ font-family: 'Moon Dance', cursive;
   }
   .paragraf-5{
     position: absolute;
-    top: 217%;
+    top: 210%;
     left: 10%;
   }
   .paragraf-6{
     position: absolute;
-    top: 245%;
+    top: 240%;
     left: 10%;
   }
   .footer{
     background-color:rgb(250, 244, 238);
     grid-area: f;
     padding: 70px 0;
+    grid-area: f;
 }
 .container{
     max-width: 1170px;
@@ -246,4 +248,25 @@ transform: all 0.3s ease;
     color: #f1b35c;
     padding-left: 10px;
 }
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+   "h h h h h h h h h h h h"
+   "h h h h h h h h h h h h"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "f f f f f f f f f f f f"
+   ;
+}
 
+main{
+    grid-area: m;
+    background-color: antiquewhite;
+}
