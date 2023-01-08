@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+   
+}
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+   "h h h h h h h h h h h h"
+   "h h h h h h h h h h h h"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "m m m m m m m m m m m m"
+   "f f f f f f f f f f f f"
+   ;
+}
+.search-bar{
+    width: 100%;
+    max-width: 250px;
+    background-color: rgba(238, 196, 147, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+.search-bar input{
+    background-color: transparent;
+    flex:1;
+    border:0;
+    outline: none;
+    padding: 2px;
+    color: rgb(248, 202, 141);
+}
+::placeholder{
+    color: rgb(245, 198, 150);
+}
+.search-bar button img{
+    width: 25px;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 25px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+.header{
+    display: flex;
+justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(248, 236, 222,0.8);
+    padding: 10px;
+    grid-area: h;
+   position: sticky;
+   top: 0;
+}
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    padding-left: 45px;
+}
+.nav-item a{
+    text-decoration: none;
+    color: rgb(234, 195, 144);
+}
+.nav-item a:hover{
+    color: rgb(233, 176, 102);
+}
+.tittle{
+font-size: 30px;
+color: rgb(246, 205, 152);
+font-family: 'Moon Dance', cursive;
+} 
+.login{
+    text-decoration: none;
+    color: rgb(234, 195, 144);
+}
+.login:hover{
+    color: rgb(233, 176, 102);
+}
+
+main{
+  margin: 25px;
+    background-color: antiquewhite;
+    padding: 20px;
+    grid-area: m;
+}
+.footer{
+    background-color:rgb(250, 244, 238);
+    grid-area: f;
+    padding: 70px 0;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.footer ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+ flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #f1b35c;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+font-size: 16px;
+text-transform: capitalize;
+color: #f3bd71;
+text-decoration: none;
+font-weight: 300;
+transform: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #f1b35c;
+    padding-left: 10px;
+}
+
+#form {
+    width: 400px;
+    margin: 8vh auto 5vh auto;
+    padding: 20px;
+    background-color: rgba(242, 205, 161, 0.6);
+    border-radius: 4px;
+    font-size: 12px;
+    box-shadow: 10px -5px 5px rgb(243, 207, 162);
+}
+
+
+#form h1 {
+    color: #dd9a1e;
+    text-align: center;
+}
+#form label{
+    padding: 5px 0 10px 0;
+    font-size: 17px;
+    color: #a36b1c;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: #f2c485;
+    border: none;
+    border-radius: 4px;
+}
+#form button:hover{
+    background-color: #d89538; 
+}
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+.signup{
+    margin: 20% 0 10% 45%;
+    padding: 10px 26px 10px 26px;
+    text-align: center;
+    background-color: #f2c485;
+    border: none;
+    border-radius: 4px;
+   text-decoration: none;
+   color: aliceblue;
+   font-weight: 500;
+}
+.signup:hover{
+    background-color: #d89538; 
+}
