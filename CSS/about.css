@@ -8,6 +8,7 @@ body{
    margin: 0;
 }
 
+
 .search-bar{
     width: 100%;
     max-width: 250px;
@@ -158,7 +159,7 @@ font-family: 'Moon Dance', cursive;
   }
   .img17{
     width: 100%;
-    height: 700px;
+    height: 750px;
     margin-top: 40px;
     opacity: 0.3;
     position: relative;
@@ -171,12 +172,12 @@ font-family: 'Moon Dance', cursive;
   }
   .paragraf-4{
     position: absolute;
-    top: 175%;
+    top: 155%;
     left: 10%;
   }
   .heading-2{
     position: absolute;
-    top: 160%;
+    top: 140%;
     left: 10%;
     font-family: 'Moon Dance', cursive;
     font-size: 30px;
@@ -184,12 +185,12 @@ font-family: 'Moon Dance', cursive;
   }
   .paragraf-5{
     position: absolute;
-    top: 210%;
+    top: 193%;
     left: 10%;
   }
   .paragraf-6{
     position: absolute;
-    top: 240%;
+    top: 225%;
     left: 10%;
   }
   .footer{
