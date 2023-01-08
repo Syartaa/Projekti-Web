@@ -365,3 +365,38 @@ transform: all 0.3s ease;
     color: #f1b35c;
     padding-left: 10px;
 }
+.section-2{
+  display: flex;
+  flex-direction: row;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding: 5px;
+}
+.article{
+ margin-right: 15px;
+}
+.heading-3{
+  padding: 10px 0 10px 0;
+  font-weight: 400;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.heading-4{
+  padding: 5px 0 10px 0;
+  font-weight: 600;
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.paragraf{
+  opacity: 0.5;
+  padding: 5px 0 10px 0;
+}
+.shopnow{
+  padding: 5px 0 10px 0;
+  font-weight: 700;
+  line-height: 5px;
+  color: #f0a945;
+  text-decoration: underline;
+}
+.shopnow:hover{
+  color: #815313;
+}
