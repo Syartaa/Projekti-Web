@@ -6,27 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../HTML/../CSS/products.css">
+    <link rel="stylesheet" href="./CSS/products.css">
     <title>Products</title>
 </head>
 <body>
     <header class="header">
-        <h1 class="tittle">Radiance</h1>
-        <nav class="nav-bar">
-            <ul class="nav-items">
-                <li class="nav-item"><a href="./home.html">Home</a></li>
-                <li class="nav-item"><a href="./about.html">About</a></li>
-                <li class="nav-item"><a href="./products.html">Products</a></li>
-                <li class="nav-item"><a href="#">Features</a></li>
-            </ul>
-        </nav>
-        <div class="search">
-            <form action="" class="search-bar">
-                <input type="text" placeholder="search" name="q">
-                <button type="submit"><img src="../HTML/../IMG/search.png"></button>
-            </form>
-        </div>
-        <a href="./login.html" class="login">Log in</a>
+    <?php include './include/navbar.php' ?>
     </header>
     <main>
 
@@ -41,7 +26,7 @@
                         <strong>WINTER</strong>
                     </p>
                 </div>
-                <img src="../HTML/../IMG/55.jpg" style="width: 100%; height: 100%;">
+                <img src="./IMG/55.jpg" style="width: 100%; height: 100%;">
             </div>
 
             <div class="myslide ">
@@ -51,7 +36,7 @@
                     <p>New Tear, New Beauty Routine.Get 15% off sitewide on <br>
                         the fastest beauty additions you need with code <strong>WINTER</strong></p>
                 </div>
-                <img src="../HTML/../IMG/88.jpg" style="width: 100%; height: 100%;">
+                <img src="./IMG/88.jpg" style="width: 100%; height: 100%;">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -70,7 +55,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <span class="dicount">50% off</span>
-                        <img src="../HTML/../IMG/45.jpg" class="product" alt="">
+                        <img src="./IMG/45.jpg" class="product" alt="">
                     </div>
                     <div class="product-info">
                         <h4>PETER THOMSAN</h4>
@@ -85,7 +70,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <span class="dicount">50% off</span>
-                        <img src="../HTML/../IMG/78.jpg" class="product" alt="">
+                        <img src="./IMG/78.jpg" class="product" alt="">
                     </div>
                     <div class="product-info">
                         <h4>AROMATHERAPY ASSOCIATES</h4>
@@ -100,7 +85,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <span class="dicount">50% off</span>
-                        <img src="../HTML/../IMG/96.jpg" class="product" alt="">
+                        <img src="./IMG/96.jpg" class="product" alt="">
                     </div>
                     <div class="product-info">
                         <h4>CHRISTOPHE ROBIN</h4>
@@ -116,7 +101,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <span class="dicount">50% off</span>
-                        <img src="../HTML/../IMG/41.jpg" class="product" alt="">
+                        <img src="./IMG/41.jpg" class="product" alt="">
                     </div>
                     <div class="product-info">
                         <h4>FARMACY BEAUTY</h4>
@@ -132,7 +117,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <span class="dicount">50% off</span>
-                        <img src="../HTML/../IMG/33.jpg" class="product" alt="">
+                        <img src="./IMG/33.jpg" class="product" alt="">
                     </div>
                     <div class="product-info">
                         <h4>SKIN CEUTICALS</h4>
@@ -147,7 +132,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <span class="dicount">50% off</span>
-                        <img src="../HTML/../IMG/99.jpg" class="product" alt="">
+                        <img src="./IMG/99.jpg" class="product" alt="">
                     </div>
                     <div class="product-info">
                         <h4>BIOEFFECT EGF </h4>
@@ -162,7 +147,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <span class="dicount">50% off</span>
-                        <img src="../HTML/../IMG/77.jpg" class="product" alt="">
+                        <img src="./IMG/77.jpg" class="product" alt="">
                     </div>
                     <div class="product-info">
                         <h4>AUGUSTINUS BADER</h4>
@@ -178,7 +163,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <span class="dicount">50% off</span>
-                        <img src="../HTML/../IMG/6.jpg" class="product" alt="">
+                        <img src="./IMG/6.jpg" class="product" alt="">
                     </div>
                     <div class="product-info">
                         <h4>Chanel</h4>
@@ -192,7 +177,7 @@
         </section>
         <section class="section-2">
             <article class="article">
-                <img src="../HTML/../IMG/111.jpg" alt="">
+                <img src="./IMG/111.jpg" alt="">
                 <h3 class="heading-3">WE LOVE</h3>
                 <h4 class="heading-4">AROMATHERAPY ASSOCIATES</h4>
                 <p class="paragraf">
@@ -202,7 +187,7 @@
                 <p class="shopnow">SHOP NOW</p>
             </article>
             <article class="article">
-                <img src="../HTML/../IMG/222.jpg" alt="">
+                <img src="./IMG/222.jpg" alt="">
                 <h3 class="heading-3">TRENDING NOW</h3>
                 <h4 class="heading-4">MILK MAKEUP</h4>
                 <p class="paragraf">
@@ -212,7 +197,7 @@
                 <p class="shopnow">SHOP NOW</p>
             </article>
             <article class="article">
-                <img src="../HTML/../IMG/333.jpg" alt="">
+                <img src="./IMG/333.jpg" alt="">
                 <h3 class="heading-3">MOST WANTED</h3>
                 <h4 class="heading-4">Olaplex</h4>
                 <p class="paragraf">
@@ -224,51 +209,11 @@
         </section>
 </main>
        <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="./home.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./products.html">>Products</a></li>
-                    <li><a href="#">Features</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Get help</h4>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Order Status</a></li>
-                    <li><a href="#">Payment Options</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Online shop</h4>
-                <ul>
-                    <li><a href="#">Organic skincare pacts</a></li>
-                    <li><a href="#">Anti-aging Minerals</a></li>
-                    <li><a href="#">Skin Type</a></li>
-                    <li><a href="#">Skin Concern</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Follow us</h4>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-                </div>
-            </div>
-        </div>
-    </div>
+       <?php include './include/footer.php' ?>
+  
 
 </footer>
-<script src="../HTML/../JavaScript/slider.js"></script>
-<script src="../HTML/../JavaScript/products.js"></script>
+<script src="./JavaScript/slider.js"></script>
+<script src="./JavaScript/products.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
-    <link rel="stylesheet" href="../HTML/../CSS/about.css">
+    <link rel="stylesheet" href="./CSS/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
@@ -16,22 +16,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <h1 class="tittle">Radiance</h1>
-            <nav class="nav-bar">
-                <ul class="nav-items">
-                    <li class="nav-item"><a href="./home.html">Home</a></li>
-                    <li class="nav-item"><a href="./about.html">About</a></li>
-                    <li class="nav-item"><a href="./products.html">Products</a></li>
-                    <li class="nav-item"><a href="#">Features</a></li>
-                </ul>
-            </nav>
-            <div class="search">
-                <form action="" class="search-bar">
-                    <input type="text" placeholder="search" name="q">
-                    <button type="submit"><img src="../HTML/../IMG/search.png"></button>
-                </form>
-            </div>
-            <a href="login.html" class="login">Log in</a>
+        <?php include './include/navbar.php' ?>
         </header>
         <main>
             <div class="center">
@@ -41,11 +26,11 @@
 
             <div class="slider">
                 <div class="myslide ">
-                    <img src="../HTML/../IMG/14.jpg" style="width: 100%; height: 100%;">
+                    <img src="./IMG/14.jpg" style="width: 100%; height: 100%;">
                 </div>
 
                 <div class="myslide ">
-                    <img src="../HTML/../IMG/16.jpg" style="width: 100%; height: 100%;">
+                    <img src="./IMG/16.jpg" style="width: 100%; height: 100%;">
                 </div>
 
                 <div class="myslide ">
@@ -53,11 +38,11 @@
                 </div>
 
                 <div class="myslide ">
-                    <img src="../HTML/../IMG/11.jpg" style="width: 100%; height: 100%;">
+                    <img src="./IMG/11.jpg" style="width: 100%; height: 100%;">
                 </div>
 
                 <div class="myslide ">
-                    <img src="../HTML/../IMG/13.jpg" style="width: 100%; height: 100%;">
+                    <img src="./IMG/13.jpg" style="width: 100%; height: 100%;">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -88,7 +73,7 @@
                         </p>
                     </article>
                     <article class="article-2">
-                        <img src="../HTML/../IMG/18.jpg" class="img17">
+                        <img src="./IMG/18.jpg" class="img17">
                         <h2 class="heading-2">What's so unique about <br>
                             Radiance Cosmetics and Skincare?</h2>
                         <p class="paragraf paragraf-4">
@@ -124,49 +109,7 @@
                 </section>
         </main>
         <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="./home.html">Home</a></li>
-                            <li><a href="./about.html">About</a></li>
-                            <li><a href="./products.html">>Products</a></li>
-                            <li><a href="#">Features</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Get help</h4>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Shipping</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Order Status</a></li>
-                            <li><a href="#">Payment Options</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Online shop</h4>
-                        <ul>
-                            <li><a href="#">Organic skincare pacts</a></li>
-                            <li><a href="#">Anti-aging Minerals</a></li>
-                            <li><a href="#">Skin Type</a></li>
-                            <li><a href="#">Skin Concern</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Follow us</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+          
         </footer>
 
         <script src="../HTML/../JavaScript/slider.js"></script>
