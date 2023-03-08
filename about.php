@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="myslide ">
-                    <img src="../HTML/../IMG/12.jpg" style="width: 100%; height: 100%;">
+                    <img src="./IMG/12.jpg" style="width: 100%; height: 100%;">
                 </div>
 
                 <div class="myslide ">
@@ -109,8 +109,8 @@
                 </section>
         </main>
         <footer class="footer">
-          
+        <?php include './include/footer.php' ?>
         </footer>
 
-        <script src="../HTML/../JavaScript/slider.js"></script>
+        <script src="./JavaScript/slider.js"></script>
 </body>
