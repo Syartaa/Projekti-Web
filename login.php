@@ -17,6 +17,13 @@
                 $_SESSION['email']=$email;
                 header('location:home.php');
                 
+                $row = mysqli_fetch_array($result);
+                 
+      if($row['user_type'] == 'admin'){
+
+         $_SESSION['admin_name'] = $row['name'];
+         header('location:./dashboard/dashbord.php');
+            } 
  
          else{
             $error[] = 'incorrect email or password!';
