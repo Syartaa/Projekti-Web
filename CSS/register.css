@@ -24,18 +24,6 @@ body{
    "f f f f f f f f f f f f"
    ;
 }
-.header{
-    display: flex;
-justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    background-color: rgb(248, 236, 222,0.8);
-    padding: 10px;
-    grid-area: h;
-   position: sticky;
-   top: 0;
-}
 main{
   margin: 25px;
     background-color: antiquewhite;

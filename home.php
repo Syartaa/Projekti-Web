@@ -13,18 +13,17 @@
 </head>
 <body>
     <div class="wrapper">
-    <header class="header">
+    
        <?php include './include/navbar.php' ?>
-    </header>
+    
     <main>
             <p class="paragraf-1">Grow up your skin <br> with the power of <br>natural product.</p>
             <img src="./IMG/10.jpg" id="img2">
             <img src="./IMG/3.jpg" id="img1" alt="">
     </main>
-    <footer class="footer">
+    
     <?php include './include/footer.php' ?>
 
-    </footer>
 </div>
 </body>
 </html>

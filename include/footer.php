@@ -65,6 +65,7 @@ transform: all 0.3s ease;
     </style>
 </head>
 <body>
+<footer class="footer">
 <div class="container">
                 <div class="row">
                     <div class="footer-col">
@@ -73,7 +74,7 @@ transform: all 0.3s ease;
                             <li><a href="./home.php">Home</a></li>
                             <li><a href="./about.php">About</a></li>
                             <li><a href="./products.php">Products</a></li>
-                            <li><a href="#">Features</a></li>
+                            <li><a href="./blog.php">Blog</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
@@ -107,6 +108,6 @@ transform: all 0.3s ease;
                     </div>
                 </div>
             </div>
-  
+</footer>
 </body>
 </html>

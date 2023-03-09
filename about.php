@@ -15,9 +15,9 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        
         <?php include './include/navbar.php' ?>
-        </header>
+        
         <main>
             <div class="center">
                 <h2 class="heading">About us</h2>
@@ -108,9 +108,9 @@
                     </article>
                 </section>
         </main>
-        <footer class="footer">
+      
         <?php include './include/footer.php' ?>
-        </footer>
+      
 
         <script src="./JavaScript/slider.js"></script>
 </body>

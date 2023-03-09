@@ -8,6 +8,18 @@
 
     <style>
         
+.header{
+    display: flex;
+justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(248, 236, 222,0.8);
+    padding: 10px;
+   position: sticky;
+   top: 0;
+   grid-area: h;
+}
 .nav-items{
     display: flex;
     flex-direction: row;
@@ -74,14 +86,15 @@ font-family: 'Moon Dance', cursive;
 
 </head>
 <body>
-    
+    <header class="header">
 <h1 class="tittle">Radiance</h1>
+
         <nav class="nav-bar">
             <ul class="nav-items">
                 <li class="nav-item"><a href="./home.php">Home</a></li>
                 <li class="nav-item"><a href="./about.php">About</a></li>
                 <li class="nav-item"><a href="./products.php">Products</a></li>
-                <li class="nav-item"><a href="#">Features</a></li>
+                <li class="nav-item"><a href="./blog.php">Blog</a></li>
             </ul>
         </nav>
         <div class="search">
@@ -91,6 +104,6 @@ font-family: 'Moon Dance', cursive;
             </form>
         </div>
         <a href="./login.php" class="login">Log in</a>
-
+        </header>
 </body>
 </html>
