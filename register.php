@@ -1,3 +1,39 @@
+
+<?php
+
+
+ require_once 'config.php';
+
+if(isset($_POST['submit'])){
+    $name=$_POST['name'];
+    $username=$_POST['username'];
+    $email=$_POST['email']; 
+    $number=$_POST['number'];
+    $birthday=$_POST['data'];
+    $password=$_POST['password'];
+    $confirm_password=$_POST['password2'];
+    $user_type=$_POST['user_type'];
+   $select ="SELECT * FROM register WHERE email = '$email' && password='$password'";
+   $result=mysqli_query($conn,$select);
+   if(mysqli_num_rows($result) > 0){
+    $error[]='user already exist!';
+
+   }else{
+    if($password != $confirm_password){
+        $error[]='The passwords doesnt match!';
+    }else{
+        $insert ="INSERT INTO register(name,username,email,number,birthday,password,confirm_password,user_type)
+        VALUES ('$name','$username','$email','$number','$birthday','$password','$confirm_password','$user_type')";
+        mysqli_query($conn,$insert);
+        
+        header('location:login.php');
+    }
+   }
+};
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,19 +47,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
     <title>Document</title>
+    <style>
+        .login{
+            padding:15px;
+            font-size:15px;
+            color:orange;
+            text-align: center;
+        }.loginbtn{
+            color: #d89538;
+            list-style: none;
+}
+.error-msg{
+    margin:10px 0px;
+    display:block;
+    background:crimson;
+    color: #fff;
+    border-radius:5px;
+    font-size:20px;
+}
+    </style>
 </head>
 
 <body>
 
     <div class="wrapper">
-        <header class="header">
+        
         <?php include './include/navbar.php' ?>
-        </header>
 
+        
         <main>
             <div class="container">
-                <form id="form" action="/">
+                <form id="form" method="POST">
+
                     <h1>Registration</h1>
+                    <?php if(isset($error)){
+                foreach($error as $error){
+                    echo '<span class="error-msg">'.$error.'</span>';
+                }
+            }  ?>
                     <div class="input-control">
                         <label for="name">Name</label>
                         <input id="name" name="name" type="text" placeholder="Name">
@@ -59,16 +120,21 @@
                         <input id="password2"name="password2" type="password" placeholder="Password">
                         <div class="error"></div>
                     </div>
-                    <button type="submit">Sign Up</button>
+                    <div class="input-control">
+                        <select name="user_type" class="user_type">
+                            <option value="user">user</option>
+                            <option value="admin">admin</option>
+                        </select>
+                    </div>
+                    <button type="submit" name="submit">Sign Up</button>
+                    <p class="login" > You have an account? <a href="./login.php" class="loginbtn">Login</a> </p>
                 </form>
             </div>
         </main>
 
 
-        <footer class="footer">
+       
         <?php include './include/footer.php' ?>
-
-        </footer>
     </div>
 
     <script src="./JavaScript/signup.js"></script>
