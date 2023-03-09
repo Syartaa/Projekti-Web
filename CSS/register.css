@@ -103,3 +103,9 @@ main{
     font-size: 9px;
     height: 13px;
 }
+.input-control .user_type{
+    margin: 8px 0;
+    padding: 10px 15px;
+    border:#d89538;
+    border-radius: 5%;
+}
