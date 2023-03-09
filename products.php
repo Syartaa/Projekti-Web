@@ -47,132 +47,43 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
             </div>
         </div>
+        
         <section class="products">
             <h2 class="product-category">Sale</h2>
             <button class="prev-btn">&#10094;</button>
             <button class="next-btn">&#10095;</button>
             <div class="product-container">
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="dicount">50% off</span>
-                        <img src="./IMG/45.jpg" class="product" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h4>PETER THOMSAN</h4>
-                        <p class="product-description">Petter Thomas Roth Wter Drench <br>
-                            Hyraluronic Cloud Cream 50ml</p>
-                        <span class="price">$25</span>
-                        <span class="actual-price">$55</span>
-                        <button class="shop">Shop now</button>
-                    </div>
-                </div>
+            <?php
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="dicount">50% off</span>
-                        <img src="./IMG/78.jpg" class="product" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h4>AROMATHERAPY ASSOCIATES</h4>
-                        <p class="product-description">light Relax Bath and <br> Shower Oil
-                          50ml</p>
-                        <span class="price">$35</span>
-                        <span class="actual-price">$65</span>
-                        <button class="shop">Shop now</button>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="dicount">50% off</span>
-                        <img src="./IMG/96.jpg" class="product" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h4>CHRISTOPHE ROBIN</h4>
-                        <p class="product-description">
-                            Shade Variation Care Golden Blonde
-                        </p>
-                        <span class="price">$50</span>
-                        <span class="actual-price">$100</span>
-                        <button class="shop">Shop now</button>
-                    </div>
-                </div>
+$sql = "select * from `product`";
+$result = mysqli_query($conn,$sql);
+if($result){
+    while($row=mysqli_fetch_assoc($result)){
+        $id=$row['id'];
+        $product_image=$row['product_image'];
+        $product_image=$row['product_name'];
+        $product_description=$row['product_description'];
+        $product_price=$row['product_price'];
+        $actual_price=$row['actual_price'];
+        echo ' <div class="product-card">
+        <div class="product-image">
+            <span class="dicount">50% off</span>
+            <img src="./IMG/' . $product_image.'"'.' class="product" alt="">
+        </div>
+        <div class="product-info">
+            <h4>PETER THOMSAN</h4>
+            <p class="product-description">'.$product_description.'</p>
+            <span class="price">'.$product_price.'</span>
+            <span class="actual-price">'.$actual_price.'</span>
+            <button class="shop">Shop now</button>
+        </div>
+    </div>';
+    }
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="dicount">50% off</span>
-                        <img src="./IMG/41.jpg" class="product" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h4>FARMACY BEAUTY</h4>
-                        <p class="product-description">
-                            Wake up Honey Eye Cream
-                        </p>
-                        <span class="price">$41</span>
-                        <span class="actual-price">$83</span>
-                        <button class="shop">Shop now</button>
-                    </div>
-                </div>
+}
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="dicount">50% off</span>
-                        <img src="./IMG/33.jpg" class="product" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h4>SKIN CEUTICALS</h4>
-                        <p class="product-description">SkinCeutials C E Ferulic <br>
-                          Ascorbic Acid Vitamin C Serum 30ml</p>
-                        <span class="price">$36</span>
-                        <span class="actual-price">$65</span>
-                        <button class="shop">Shop now</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="dicount">50% off</span>
-                        <img src="./IMG/99.jpg" class="product" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h4>BIOEFFECT EGF </h4>
-                        <p class="product-description">
-                            Eye Serum 6ml
-                        </p>
-                        <span class="price">$70</span>
-                        <span class="actual-price">$150</span>
-                        <button class="shop">Shop now</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="dicount">50% off</span>
-                        <img src="./IMG/77.jpg" class="product" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h4>AUGUSTINUS BADER</h4>
-                        <p class="product-description">
-                            The leave-in Hair Treatment
-                        </p>
-                        <span class="price">$69</span>
-                        <span class="actual-price">$146</span>
-                        <button class="shop">Shop now</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="dicount">50% off</span>
-                        <img src="./IMG/6.jpg" class="product" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h4>Chanel</h4>
-                        <p class="product-description">Hydra Beauty</p>
-                        <span class="price">$27</span>
-                        <span class="actual-price">$57</span>
-                        <button class="shop">Shop now</button>
-                    </div>
-                </div>
+?>
+            
             </div>
         </section>
         <section class="section-2">
