@@ -10,9 +10,9 @@
     <title>Products</title>
 </head>
 <body>
-    <header class="header">
+
     <?php include './include/navbar.php' ?>
-    </header>
+
     <main>
 
         <h2 class="heading-2">Up to 50% off+ Extra 10 off sale items with te code WINTE| SHOP NOW</h2>
@@ -86,44 +86,31 @@ if($result){
             
             </div>
         </section>
+        <?php
+            require_once './dashbord/productsController.php';
+            ?>
         <section class="section-2">
-            <article class="article">
-                <img src="./IMG/111.jpg" alt="">
-                <h3 class="heading-3">WE LOVE</h3>
-                <h4 class="heading-4">AROMATHERAPY ASSOCIATES</h4>
-                <p class="paragraf">
-                    Perfect for unwinding,this wellness brand uses the power <br>
-                    of essentials oils to smoothe the mind, body and skin.
+          <article class="article">
+            <?php
+            $produkte=new productsController;
+            $all=$produkte->getall();
+            for($i=0;$i<count($all);$i++){
+              echo  '<img src="./IMG/"'.$all[$i]['image'].'"'.' name="image" alt="">';
+              echo ' <h3 class="heading-3" name="name">'.$all[$i]['title'].'</h3>';
+              echo '<h4 class="heading-4">'.$all[$i]['name'].'</h4>';
+               echo ' <p class="paragraf">'
+                    .$all[$i]['description'].'
                 </p>
-                <p class="shopnow">SHOP NOW</p>
+                <p class="shopnow">SHOP NOW</p>';
+            }
+                ?>
             </article>
-            <article class="article">
-                <img src="./IMG/222.jpg" alt="">
-                <h3 class="heading-3">TRENDING NOW</h3>
-                <h4 class="heading-4">MILK MAKEUP</h4>
-                <p class="paragraf">
-                    Cruelty-free beauty and take-everywhere favorites -Milk <br>
-                    knows how to put the joy into our getting ready routins.
-                </p>
-                <p class="shopnow">SHOP NOW</p>
-            </article>
-            <article class="article">
-                <img src="./IMG/333.jpg" alt="">
-                <h3 class="heading-3">MOST WANTED</h3>
-                <h4 class="heading-4">Olaplex</h4>
-                <p class="paragraf">
-                    Frizz-controlling, shine-boosting, band-building and hair- <br>
-                    repairing - what's not to love about the Olaplex family?
-                </p>
-                <p class="shopnow">SHOP NOW</p>
-            </article>
+
         </section>
 </main>
-       <footer class="footer">
+      
        <?php include './include/footer.php' ?>
-  
 
-</footer>
 <script src="./JavaScript/slider.js"></script>
 <script src="./JavaScript/products.js"></script>
 </body>
