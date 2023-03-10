@@ -21,7 +21,7 @@
       dry or acne-prone, you’ll find tips for all your concerns.</p>
       </section>
       <article>
-        <img src="./IMG/1.jpg" alt="">
+        <img src="./IMG/36.jpg" alt="">
         <div class="description">
         <h2>Skin Care Blogs</h2>
         <p>The power of the Flower: The Women of <br>
@@ -29,14 +29,14 @@
     </div>
       </article>
       <article>
-        <img src="./IMG/1.jpg" alt="">
+        <img src="./IMG/39.jpg" alt="">
         <div class="description">
         <h2>Skin Care Blogs</h2>
         <p>Doctor’s Orders for Compromised Skin</p>
     </div>
       </article>
       <article>
-        <img src="./IMG/1.jpg" alt="">
+        <img src="./IMG/63.jpg" alt="">
         <div class="description">
         <h2>Best Beauty Skin</h2>
         <p>Best Beauty Devices to Help Solve Your <br> Skin
