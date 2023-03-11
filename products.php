@@ -1,3 +1,7 @@
+<?php
+require 'config.php'; 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +65,7 @@ if($result){
     while($row=mysqli_fetch_assoc($result)){
         $id=$row['id'];
         $product_image=$row['product_image'];
-        $product_image=$row['product_name'];
+        $product_name=$row['product_name'];
         $product_description=$row['product_description'];
         $product_price=$row['product_price'];
         $actual_price=$row['actual_price'];
@@ -73,8 +77,8 @@ if($result){
         <div class="product-info">
             <h4>PETER THOMSAN</h4>
             <p class="product-description">'.$product_description.'</p>
-            <span class="price">'.$product_price.'</span>
-            <span class="actual-price">'.$actual_price.'</span>
+            <span class="price">'.$product_price.' $</span>
+            <span class="actual-price">'.$actual_price.'$</span>
             <button class="shop">Shop now</button>
         </div>
     </div>';
@@ -87,24 +91,26 @@ if($result){
             </div>
         </section>
         <?php
-            require_once './dashbord/productsController.php';
+            require_once './dashboard/productsController.php';
             ?>
         <section class="section-2">
-          <article class="article">
+          
             <?php
             $produkte=new productsController;
             $all=$produkte->getall();
             for($i=0;$i<count($all);$i++){
-              echo  '<img src="./IMG/"'.$all[$i]['image'].'"'.' name="image" alt="">';
+              echo  '<article class="article">
+              <img src="'.$all[$i]['image'].'"'.' name="image" alt="">';
               echo ' <h3 class="heading-3" name="name">'.$all[$i]['title'].'</h3>';
               echo '<h4 class="heading-4">'.$all[$i]['name'].'</h4>';
                echo ' <p class="paragraf">'
                     .$all[$i]['description'].'
                 </p>
-                <p class="shopnow">SHOP NOW</p>';
+                <p class="shopnow">SHOP NOW</p>
+                </article>';
             }
                 ?>
-            </article>
+            
 
         </section>
 </main>

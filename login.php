@@ -22,7 +22,7 @@
       if($row['user_type'] == 'admin'){
 
          $_SESSION['admin_name'] = $row['name'];
-         header('location:./dashboard/dashbord.php');
+         header('location:./dashboard/dashboard.php');
             } 
  
          else{
