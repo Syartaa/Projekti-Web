@@ -12,6 +12,7 @@ require 'config.php';
     <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/products.css">
     <title>Products</title>
+
 </head>
 <body>
 
@@ -100,7 +101,7 @@ if($result){
             $all=$produkte->getall();
             for($i=0;$i<count($all);$i++){
               echo  '<article class="article">
-              <img src="'.$all[$i]['image'].'"'.' name="image" alt="">';
+              <img class="produkt-img" src="'.$all[$i]['image'].'"'.' name="image" alt="">';
               echo ' <h3 class="heading-3" name="name">'.$all[$i]['title'].'</h3>';
               echo '<h4 class="heading-4">'.$all[$i]['name'].'</h4>';
                echo ' <p class="paragraf">'

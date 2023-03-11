@@ -36,24 +36,5 @@ main{
   margin: 25px;
     background-color: antiquewhite;
     padding: 20px;
-    grid-area: m;
-
 }
 
-.wrapper{
-    display: grid;
-    grid-template-areas: 
-   "h h h h h h h h h h h h"
-   "h h h h h h h h h h h h"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "f f f f f f f f f f f f"
-   ;
-}

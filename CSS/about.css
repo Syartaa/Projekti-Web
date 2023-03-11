@@ -120,31 +120,9 @@ body{
     top: 225%;
     left: 10%;
   }
-  .footer{
-    background-color:rgb(250, 244, 238);
-    grid-area: f;
-    padding: 70px 0;
-    grid-area: f;
-}
-.wrapper{
-    display: grid;
-    grid-template-areas: 
-   "h h h h h h h h h h h h"
-   "h h h h h h h h h h h h"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "m m m m m m m m m m m m"
-   "f f f f f f f f f f f f"
-   ;
-}
 
 main{
-    grid-area: m;
+
     background-color: antiquewhite;
 }
+
