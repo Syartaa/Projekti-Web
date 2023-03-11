@@ -62,6 +62,21 @@ transform: all 0.3s ease;
     padding-left: 10px;
 }
 
+/* responsive */
+@media (max-width:900px) {
+    .footer-col{
+    width: 50%;
+   margin-bottom:30px
+} 
+}
+
+@media (max-width:500px) {
+    .footer-col{
+    width: 100%;
+  
+} 
+}
+
     </style>
 </head>
 <body>

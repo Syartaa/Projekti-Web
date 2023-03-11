@@ -71,7 +71,7 @@ font-family: 'Moon Dance', cursive;
     color: rgb(245, 198, 150);
 }
 .search-bar button img{
-    width: 25px;
+    width: 20px;
 }
 .search-bar button{
     border: 0;
@@ -81,6 +81,42 @@ font-family: 'Moon Dance', cursive;
     background-color: antiquewhite;
     cursor: pointer;
 }
+#menu-bar{
+    display:none;
+}
+.header label{
+    color: rgb(234, 195, 144);
+    font-size:20px;
+    cursor: pointer;
+    display:none;
+}
+
+/* responsive */
+@media (max-width:900px) {
+           
+.header{
+    padding:20px;
+}
+.header label{
+    display:inherit;
+}
+.header .nav-bar{
+    position: absolute;
+    top:100%; left:0; right:0;
+    background-color: rgb(248, 236, 222,0.8);
+    border-top:1px solid orange;
+    display:none;
+
+}
+ .nav-items{
+font-size:25px;
+display:block;
+}
+#menu-bar:checked ~ .nav-bar{
+    display:inherit;
+}
+
+} 
 
     </style>
 
@@ -88,7 +124,8 @@ font-family: 'Moon Dance', cursive;
 <body>
     <header class="header">
 <h1 class="tittle">Radiance</h1>
-
+<input type="checkbox" id="menu-bar">
+<label for="menu-bar">Menu</label>
         <nav class="nav-bar">
             <ul class="nav-items">
                 <li class="nav-item"><a href="./home.php">Home</a></li>
