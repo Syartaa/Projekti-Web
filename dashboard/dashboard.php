@@ -19,6 +19,13 @@
       .create:hover{
         color:orange;
       }
+      
+      .logout{
+        text-decoration: none;
+        display:flex;
+        justify-content:flex-end;
+        color: #f8d272;
+      }
     </style>
 </head>
 <body>
@@ -50,6 +57,7 @@
           </tr>
           <?php endforeach; ?>
           <a href="produkte-create.php" class="create" >Create a product</a>
+          <a href="../login.php" class="logout" >Log Out</a>
         </tbody>
     </table>
 </main>

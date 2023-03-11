@@ -44,7 +44,7 @@
     </div>
       </article>
       <article>
-        <img src="./IMG/1.jpg" alt="">
+        <img src="./IMG/888.jpg" alt="">
         <div class="description">
         <h2>Best Beauty Skin</h2>
         <p>Tackle Fine Lines and Dark Spots With <br>

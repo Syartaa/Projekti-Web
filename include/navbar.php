@@ -91,6 +91,14 @@ font-family: 'Moon Dance', cursive;
     display:none;
 }
 
+.contectus{
+    text-decoration: none;
+    color: rgb(234, 195, 144); 
+}
+.contectus:hover{
+    color: rgb(233, 176, 102);
+}
+
 /* responsive */
 @media (max-width:900px) {
            
@@ -141,6 +149,7 @@ display:block;
             </form>
         </div>
         <a href="./login.php" class="login">Log in</a>
+        <a href="./contactus.php" class="contectus">Contact us</a>
         </header>
 </body>
 </html>
