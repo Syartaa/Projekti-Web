@@ -37,7 +37,7 @@ p ,h1{
 <?php include './include/navbar.php' ?>
 <main>
 <h1>Thank you for contacting me. I will get back to you as soon as possible!</h1>
-        <p class="back">Go back to the <a href="Home.html">homepage</a>.</p>
+        <p class="back">Go back to the <a href="home.php">homepage</a>.</p>
         </main>
         <?php include './include/footer.php' ?>
 </body>

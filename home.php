@@ -10,28 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Home</title>
-    <style>
-        
-/* responsive */
-@media (max-width: 1000px) {
-
-#img1{
-    width: 550px;
-    height: 500px;
-    margin-top:40%;
-    float:left;
-}
-#img2{
-    width: 550px;
-    height: 500px; 
-    
-}
-.paragraf-1{
-   left: 30%;
-   top: 100%;
-}
-}
-    </style>
+  
 </head>
 <body>
     <div class="wrapper">

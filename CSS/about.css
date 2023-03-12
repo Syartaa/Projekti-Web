@@ -126,3 +126,28 @@ main{
     background-color: antiquewhite;
 }
 
+
+/* 
+<!-- responsive --> */
+
+    @media (max-width: 900px) {
+
+.heading-2{
+top: 170%;
+left: 10%;
+
+}
+.paragraf-5{
+top: 185%;
+left: 10%;
+}
+.paragraf-4{
+top: 225%;
+left: 10%;
+}
+.paragraf-6{
+top: 214%;
+left: 10%;
+}
+}
+

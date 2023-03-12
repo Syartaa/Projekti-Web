@@ -36,6 +36,7 @@ include_once 'database.php';
     }
 
     public function update($request, $id){
+        $request['image']='./IMG/'.$request['image'];
         $query = $this->db->pdo->prepare('UPDATE produkte SET image = :image, title = :title, name = :name, description =:description
         WHERE id=:id');
 

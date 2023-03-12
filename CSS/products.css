@@ -282,3 +282,10 @@ text-decoration: underline;
 .shopnow:hover{
 color: #815313;
 }
+
+/* responsive */
+@media (max-width: 900px) {
+  .article{
+    margin-left:20%;
+  }  
+}

@@ -21,7 +21,23 @@ if(isset($_POST['submit'])){
    }else{
     if($password != $confirm_password){
         $error[]='The passwords doesnt match!';
-    }else{
+    }
+    else if(empty($name)){
+        $error[]='Name field is required!'; 
+    }
+    else if(empty($username)){
+        $error[]='username field is required!'; 
+    }
+    else if(empty($email)){
+        $error[]='email field is required!'; 
+    }
+    else if(empty($password)){
+        $error[]='password field is required!'; 
+    }
+    else if(strlen($password)<8){
+        $error[]='Password must be at least 8 character.'; 
+    }
+    else{
         $insert ="INSERT INTO register(name,username,email,number,birthday,password,confirm_password,user_type)
         VALUES ('$name','$username','$email','$number','$birthday','$password','$confirm_password','$user_type')";
         mysqli_query($conn,$insert);
@@ -64,6 +80,7 @@ if(isset($_POST['submit'])){
     color: #fff;
     border-radius:5px;
     font-size:20px;
+    padding:10px;
 }
     </style>
 </head>
@@ -137,7 +154,7 @@ if(isset($_POST['submit'])){
         <?php include './include/footer.php' ?>
     </div>
 
-    <script src="./JavaScript/signup.js"></script>
+    <!-- <script src="./JavaScript/signup.js"></script> -->
 </body>
 
 </html>

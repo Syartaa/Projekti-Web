@@ -12,29 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-    <!-- responsive -->
-    <style>
-        @media (max-width: 900px) {
-  
-  .heading-2{
-    top: 170%;
-    left: 10%;
-   
-  }
-  .paragraf-5{
-    top: 185%;
-    left: 10%;
-  }
-  .paragraf-4{
-    top: 225%;
-    left: 10%;
-  }
-  .paragraf-6{
-    top: 214%;
-    left: 10%;
-  }
-}
-    </style>
     
 </head>
 
