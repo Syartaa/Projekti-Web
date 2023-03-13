@@ -13,13 +13,7 @@ require 'config.php';
     <link rel="stylesheet" href="./CSS/products.css">
     <title>Products</title>
 
-    <style>
-       @media (max-width: 900px) {
-          .article{
-            margin-left:20%;
-          }  
-        }
-    </style>
+  
 </head>
 <body>
 
